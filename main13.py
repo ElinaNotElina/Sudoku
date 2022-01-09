@@ -78,10 +78,13 @@ for y in range (perestanovki):
         for i in range (n):
             for j in range (len(tablitsa)):
                 tablitsa[i1][j], tablitsa[i2][j] = tablitsa[i2][j], tablitsa[i1][j]
-tablitsa_itog = tablitsa
+
+tablitsa_itog = tablitsa.copy()
+
 for i in tablitsa:
     print(*i)
 print()
+
 for i in range(40):
     deleter_i = random.randint(1,7)
     deleter_j = random.randint(1,7)
@@ -89,7 +92,9 @@ for i in range(40):
 
 for i in tablitsa_itog:
     print(*i)
-
+print("ха")
+for i in tablitsa:
+    print(*i)
 for i in range (len(tablitsa_itog)):
     str1_1 =  tablitsa_itog[0]
     str1_2 = tablitsa_itog[1]
@@ -106,175 +111,150 @@ for i in range (len(tablitsa_itog)):
 from tkinter import *
 
 def click_button():
+    global vvod_i
     vvod_i = 0
     print(vvod_i)
-    click_button.has_been_called = True
     return vvod_i
 def click_button2():
+    global vvod_i
     vvod_i = 1
     print(vvod_i)
-    click_button2.has_been_called = True
     return vvod_i
 def click_button3():
+    global vvod_i
     vvod_i = 2
     print(vvod_i)
-    click_button3.has_been_called = True
     return vvod_i
 def click_button4():
+    global vvod_i
     vvod_i = 3
     print(vvod_i)
-    click_button4.has_been_called = True
     return vvod_i
 def click_button5():
+    global vvod_i
     vvod_i = 4
     print(vvod_i)
-    click_button5.has_been_called = True
     return vvod_i
 def click_button6():
+    global vvod_i
     vvod_i = 5
     print(vvod_i)
-    click_button6.has_been_called = True
     return vvod_i
 def click_button7():
+    global vvod_i
     vvod_i = 6
     print(vvod_i)
-    click_button7.has_been_called = True
     return vvod_i
 def click_button8():
+    global vvod_i
     vvod_i = 7
     print(vvod_i)
-    click_button8.has_been_called = True
     return vvod_i
 def click_button9():
+    global vvod_i
     vvod_i = 8
     print(vvod_i)
-    click_button9.has_been_called = True
     return vvod_i
 
-click_button.has_been_called = False
-click_button2.has_been_called = False
-click_button3.has_been_called = False
-click_button4.has_been_called = False
-click_button5.has_been_called = False
-click_button6.has_been_called = False
-click_button7.has_been_called = False
-click_button8.has_been_called = False
-click_button9.has_been_called = False
-
-
-
-
-if click_button.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button()
-if click_button2.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button2()
-if click_button3.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button3()
-
-if click_button4.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button4()
-
-if click_button5.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button5()
-
-if click_button6.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button6()
-
-if click_button7.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button7()
-
-if click_button8.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button8()
-
-if click_button9.has_been_called:
-    vvod_i == 0
-    vvod_i = click_button9()
 
 
 
 def click_button10():
+    global vvod_j
     vvod_j = 0
     print(vvod_j)
     return vvod_j
 
 def click_button11():
+    global vvod_j
     vvod_j = 1
     print(vvod_j)
     return vvod_j
 
 def click_button12():
+    global vvod_j
     vvod_j = 2
     print(vvod_j)
     return vvod_j
 def click_button13():
+    global vvod_j
     vvod_j = 3
     print(vvod_j)
     return vvod_j
 def click_button14():
+    global vvod_j
     vvod_j = 4
     print(vvod_j)
     return vvod_j
 def click_button15():
+    global vvod_j
     vvod_j = 5
     print(vvod_j)
     return vvod_j
 def click_button16():
+    global vvod_j
     vvod_j = 6
     print(vvod_j)
     return vvod_j
 def click_button17():
+    global vvod_j
     vvod_j = 7
     print(vvod_j)
     return vvod_j
 def click_button18():
+    global vvod_j
     vvod_j = 8
     print(vvod_j)
     return vvod_j
 
 def click_buttonv1():
+    global vvod
     vvod = 1
     print(vvod)
 def click_buttonv2():
+    global vvod
     vvod = 2
     print(vvod)
 def click_buttonv3():
+    global vvod
     vvod = 3
     print(vvod)
 def click_buttonv4():
+    global vvod
     vvod = 4
     print(vvod)
 def click_buttonv5():
+    global vvod
     vvod = 5
     print(vvod)
 def click_buttonv6():
+    global vvod
     vvod = 6
     print(vvod)
 def click_buttonv7():
+    global vvod
     vvod = 7
     print(vvod)
 def click_buttonv8():
+    global vvod
     vvod = 8
     print(vvod)
 def click_buttonv9():
+    global vvod
     vvod = 9
     print(vvod)
 
 
 def result():
     # print(vvod_i)
+    # print(vvod_j)
+    # print(vvod)
+    print("Было:P",tablitsa[vvod_i][vvod_j])
     if tablitsa[vvod_i][vvod_j] == vvod:
         print("yes")
     if tablitsa[vvod_i][vvod_j] != vvod:
         print("no")
-# vvod_i, vvod_j, vvod is not defined потому что их значение живет только в def
+
 from tkinter import *
 
 root = Tk()
