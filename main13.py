@@ -92,7 +92,7 @@ for i in range(40):
 
 for i in tablitsa_itog:
     print(*i)
-print("ха")
+print()
 for i in tablitsa:
     print(*i)
 for i in range (len(tablitsa_itog)):
